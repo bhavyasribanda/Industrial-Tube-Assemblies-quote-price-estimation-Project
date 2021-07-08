@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  margin-top:-25px;
+  margin-left:-10px;
+  margin-right:-10px;
+  background-image: url("https://www.boltjesgroup.com/files/galleries/g12-u2-1.293-e1451730855791-1024x601.jpg");
+  height:100%;
+  min-height:500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left: 0;
+  margin: 5px;
+  max-width: 50px;
+  padding: 50px;
+  background-color:transparent;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] , input[type=date]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 12px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus ,input[type=date]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.image-container img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <br/>
+<h1 class="bg-info" align = "center" class="text-warning"><b>Tube Assemblies Price Estimation</b></h1>
+ <div class="topnav">
+     
+     <a href="/dataset">Data Details</a>
+      <a href="/data">Data Visualization</a>
+      <a href="/index1">Predict</a>
+      <a href="/login">Logout</a>
+    </div>
+    <br/><br/><br/>
+    
+    <table class="table" align = "center"  >
+      <tbody style="font-size: x-large">
+        <tr>
+            <td><img src="static\Materialcost.png"></td>
+            <td>  :  </td>
+            <td>It is a bargraph between material and cost.This graph clearly explains about how the cost is depending on the type of material. It tells about how the costs are taken for the different materials.</td>
+        </tr>
+        <tr>
+            <td><img src="static\Bcost.png"></td>
+            <td>  :  </td>
+            <td>This ia a point plot between number of bends and cost. This plot clearly explains about how the cost is depending on the number of bends. It tells about how the costs are taken for the different tubes with different number of ends..</td>
+          </tr>
+          <tr>
+            <td><img src="static\Qcost.png"></td>
+            <td>  :  </td>
+            <td>This ia a point plot between quantity and cost. This plot clearly explains about how the cost is depending on the quantity. It tells about how the costs are taken for the different tubes with different numbers .</td>
+          </tr>
+          <tr>
+            <td><img src="static\log.png"></td>
+            <td>  :  </td>
+            <td>This is a nplog plot shown between the cost and its count of tubes. This plot clearly explains about how the cost is depending on the count.</td>
+          </tr>
+          <tr>
+            <td><img src="static\diameter.png"></td>
+            <td>  :  </td>
+            <td>This is a histogram plot shown between the diameter and its count of tubes. By viewing this it is clear that maximum tubes are having the diameter from 0 to 30.</td>
+          </tr>
+          <tr>
+            <td><img src="static\bends.png"></td>
+            <td>  :  </td>
+            <td>This is a histogram plot shown between the number of bends and its count of tubes. By viewing this it is clear that maximum tubes are having the number of bends from 1.9 to 5.5.</td>
+          </tr><tr>
+            <td><img src="static\length.png"></td>
+            <td>  :  </td>
+            <td>This is a histogram plot shown between the length and its count of tubes. By viewing this it is clear that maximum tubes are having the length less than 150.</td>
+          </tr>
+          <tr>
+            <td><img src="static\thick.png"></td>
+            <td>  :  </td>
+            <td>This is a histogram plot shown between the thickness and its count of tubes. By viewing this it is clear that maximum tubes are having the thickness from 0.5 to 1.8.</td>
+          </tr>
+          
+                      
+    </tbody>
+  </table>
+
+    
+
+
+
+</div>
+
+</body>
+</html>
